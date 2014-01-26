@@ -1,0 +1,27 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="dice.css">
+</head>
+<body>
+<h1>Dice Game</h1>
+<hr>
+<h2>Welcome.</h2>
+<p>Here are the rules:</p>
+<ul>
+<li>Roll the dice to start the game.</li>
+<li>If your first roll is 7 or 11, you win.</li>
+<li>If your first roll is a 2, 3 or 12, you lose.</li>
+<li>Anything else becomes your goal. Roll your goal again before rolling a 7, and you win. Roll a 7 instead of your goal, and you lose.</li>
+</ul>
+
+
+<form action="/dice/roll" method="get">
+    <input type="hidden" name="target_point" value=<%= @target %>>
+	<input class = "button" type="submit"  value="Roll to start the game!">
+</form>
+
+</body>
+
+</html>
+

@@ -1,0 +1,27 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="dice.css">
+</head>
+
+<body>
+<h1>Dice Game</h1>
+<hr><br>
+
+<img src="https://uchicago.s3.amazonaws.com/d0<%= @dice1 %>.png">
+<img src="https://uchicago.s3.amazonaws.com/d0<%= @dice2 %>.png">
+<br>
+
+<p><%= @message %></p>
+<p><%= @message_supp %></p>
+
+
+<form action="/dice/roll" method="get">
+    <input type="hidden" name="target_point" value=<%= @target %>>
+	<input class = "button" type="submit" name="<%= @point %>" value="<%= @next_step %>">
+</form>
+
+
+</body>
+
+</html>
